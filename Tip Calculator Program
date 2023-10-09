@@ -1,0 +1,20 @@
+# Tasks and Requirements:
+
+1. Please write a greeting message for the tip calculator.
+2. Take input for total bill
+3. Take input to devide bill 
+4. Take input for tip percentage (10, 12 or 15)
+5. find out total tip amount
+6. calculate per-person bill with tip
+
+
+#Solution:
+
+print("Greetings! Please use tip calculator")
+total_bill = float(input("please enter total bill: "))
+person = int(input("how many people you would like to split the bill: "))
+tip_percent = int(input("please choose your tip percentage between 10, 12  or 15: "))
+total_tip_amount= total_bill * tip_percent / 100
+full_bill = (total_bill + total_tip_amount)
+per_person_bill = (full_bill / person)
+print(f"Per person bill ${per_person_bill}")
