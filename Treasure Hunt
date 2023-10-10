@@ -1,0 +1,62 @@
+#Solution
+
+
+
+print('''
+.-.  .-.  --..::==
+(   )(   )  //"     Writer: Ashish Shrivastav
+ '-'  '-'  /
+
+
+
+       ________   ________    _________  ____________;_
+      - ______ \ - ______ \ / _____   //.  .  ._______/
+     / /     / // /     / //_/     / // ___   /
+    / /     / // /     / /       .-'//_/|_/,-'
+   / /     / // /     / /     .-'.-'
+  / /     / // /     / /     / /
+ / /     / // /     / /     / /
+/ /_____/ // /_____/ /     / /
+\________- \________-     /_/
+
+     0000             0000        7777777777777777/========___________
+   00000000         00000000      7777^^^^^^^7777/ || ||   ___________
+  000    000       000    000     777       7777/=========//
+ 000      000     000      000             7777// ((     //
+0000      0000   0000      0000           7777//   \\   //
+0000      0000   0000      0000          7777//========//
+0000      0000   0000      0000         7777
+0000      0000   0000      0000        7777
+ 000      000     000      000        7777
+  000    000       000    000       77777
+   00000000         00000000       7777777
+     0000             0000        777777777
+''')
+
+print("Welcome Ashish! You are the new 007")
+print("Your Mission is to find Treasure - Should you choose to accept it")
+
+road = input('Please select the road which side you would like to go, "left" or "right": \n').lower()
+
+# Choose Road Logic
+if road == "left":
+    think = input('You have come to a Secret Place, "wait" for the Helicopter to pick you up or "run" to catch a car: \n')
+
+    # Choose Go-NO-GO Logic
+    if think == "wait":
+        button = input('You have reached the DESTINATION, select a button "RED", "BLUE", or "GREEN" to open the vault:\n')
+
+        # Choose Button Logic
+        if button == "RED":
+            print("GAME OVER! DIED WITHOUT OXYGEN")
+        elif button == "BLUE":
+            print("GAME OVER! BURNED BY FIRE AND DIED")
+        else:
+            print("CONGRATS! YOU FOUND THE TREASURE AND YOU ARE A BILLIONAIRE NOW")
+
+    else:
+        print("GAME OVER! HIT BY A CAR AND DEAD")
+
+else:
+    print("GAME OVER! SHOT DEAD BY A SNIPER")
+
